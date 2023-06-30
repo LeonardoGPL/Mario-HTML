@@ -39,4 +39,16 @@ const jump = () => {
     })
 
 document.addEventListener('keydown', jump);
+document.addEventListener('click',jump);
+
+$(document).ready(function(){
+    // REMOVER BARRAS DE ROLAGEM
+      $("#SUADIV").click(function(){
+        $("html, body").css({
+            'height' : $(window).height() + 'px',
+            'width' : $(window).width() + 'px',
+            'overflow' : 'hidden'
+        });
+      });
+    });
  
